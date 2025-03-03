@@ -1,0 +1,79 @@
+# Ignore Visual Studio specific files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore build results
+bin/
+obj/
+TestResults/
+GeneratedFiles/
+Debug/
+Release/
+
+# Ignore dependencies
+packages/
+*.nupkg
+project.lock.json
+global.json
+
+# Ignore NuGet restore results
+*.nuget.props
+*.nuget.targets
+!packages/repositories.config
+
+# Ignore Rider and Resharper files
+.idea/
+*.DotSettings
+*.DotSettings.user
+
+# Ignore logs, database, and temporary files
+*.log
+*.tlog
+*.cache
+*.pdb
+*.mdb
+*.db-shm
+*.db-wal
+*.db
+*.sqlite
+*.sqlite3
+
+# Ignore environment and settings files
+*.env
+appsettings.Development.json
+secrets.json
+
+# Ignore compiled code and executables
+*.dll
+*.exe
+*.pdb
+
+# Ignore test and coverage reports
+*.coverage
+*.coveragexml
+*.testsettings
+*.vsmdi
+*.trx
+coverage/
+coverage-results/
+*.csproj.user
+
+# Ignore automation tool-related files (Selenium, Appium, etc.)
+chromedriver.log
+geckodriver.log
+selenium-screenshots/
+webdriver/
+automation-results/
+
+# Ignore temporary files and lock files
+*.lock
+*.tmp
+~$*
+
+# Ignore Mac and Linux files
+.DS_Store
+*.swp
+Thumbs.db
