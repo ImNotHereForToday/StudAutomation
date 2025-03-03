@@ -1,0 +1,134 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Edgaras.Valentynovic\\Desktop\\automationTasks\\AutomationTasks\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EE91A824-1772-4A9B-ABC0-940DB134E05B}|AutomationTasks\\AutomationTasks.csproj|c:\\users\\edgaras.valentynovic\\desktop\\automationtasks\\automationtasks\\automationtasks\\testbase\\testbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE91A824-1772-4A9B-ABC0-940DB134E05B}|AutomationTasks\\AutomationTasks.csproj|solutionrelative:automationtasks\\testbase\\testbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE91A824-1772-4A9B-ABC0-940DB134E05B}|AutomationTasks\\AutomationTasks.csproj|c:\\users\\edgaras.valentynovic\\desktop\\automationtasks\\automationtasks\\automationtasks\\testbase\\module_1_test\\module_1_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE91A824-1772-4A9B-ABC0-940DB134E05B}|AutomationTasks\\AutomationTasks.csproj|solutionrelative:automationtasks\\testbase\\module_1_test\\module_1_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE91A824-1772-4A9B-ABC0-940DB134E05B}|AutomationTasks\\AutomationTasks.csproj|c:\\users\\edgaras.valentynovic\\desktop\\automationtasks\\automationtasks\\automationtasks\\factory\\browserfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE91A824-1772-4A9B-ABC0-940DB134E05B}|AutomationTasks\\AutomationTasks.csproj|solutionrelative:automationtasks\\factory\\browserfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE91A824-1772-4A9B-ABC0-940DB134E05B}|AutomationTasks\\AutomationTasks.csproj|c:\\users\\edgaras.valentynovic\\desktop\\automationtasks\\automationtasks\\automationtasks\\pagebase\\pagebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE91A824-1772-4A9B-ABC0-940DB134E05B}|AutomationTasks\\AutomationTasks.csproj|solutionrelative:automationtasks\\pagebase\\pagebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE91A824-1772-4A9B-ABC0-940DB134E05B}|AutomationTasks\\AutomationTasks.csproj|c:\\users\\edgaras.valentynovic\\desktop\\automationtasks\\automationtasks\\automationtasks\\pagebase\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE91A824-1772-4A9B-ABC0-940DB134E05B}|AutomationTasks\\AutomationTasks.csproj|solutionrelative:automationtasks\\pagebase\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE91A824-1772-4A9B-ABC0-940DB134E05B}|AutomationTasks\\AutomationTasks.csproj|c:\\users\\edgaras.valentynovic\\desktop\\automationtasks\\automationtasks\\automationtasks\\pagebase\\module_1_page\\module_1_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE91A824-1772-4A9B-ABC0-940DB134E05B}|AutomationTasks\\AutomationTasks.csproj|solutionrelative:automationtasks\\pagebase\\module_1_page\\module_1_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TestBase.cs",
+              "DocumentMoniker": "C:\\Users\\Edgaras.Valentynovic\\Desktop\\automationTasks\\AutomationTasks\\AutomationTasks\\TestBase\\TestBase.cs",
+              "RelativeDocumentMoniker": "AutomationTasks\\TestBase\\TestBase.cs",
+              "ToolTip": "C:\\Users\\Edgaras.Valentynovic\\Desktop\\automationTasks\\AutomationTasks\\AutomationTasks\\TestBase\\TestBase.cs*",
+              "RelativeToolTip": "AutomationTasks\\TestBase\\TestBase.cs*",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAwBoAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T09:56:58.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Module_1_Test.cs",
+              "DocumentMoniker": "C:\\Users\\Edgaras.Valentynovic\\Desktop\\automationTasks\\AutomationTasks\\AutomationTasks\\TestBase\\Module_1_Test\\Module_1_Test.cs",
+              "RelativeDocumentMoniker": "AutomationTasks\\TestBase\\Module_1_Test\\Module_1_Test.cs",
+              "ToolTip": "C:\\Users\\Edgaras.Valentynovic\\Desktop\\automationTasks\\AutomationTasks\\AutomationTasks\\TestBase\\Module_1_Test\\Module_1_Test.cs*",
+              "RelativeToolTip": "AutomationTasks\\TestBase\\Module_1_Test\\Module_1_Test.cs*",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T09:56:43.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BrowserFactory.cs",
+              "DocumentMoniker": "C:\\Users\\Edgaras.Valentynovic\\Desktop\\automationTasks\\AutomationTasks\\AutomationTasks\\Factory\\BrowserFactory.cs",
+              "RelativeDocumentMoniker": "AutomationTasks\\Factory\\BrowserFactory.cs",
+              "ToolTip": "C:\\Users\\Edgaras.Valentynovic\\Desktop\\automationTasks\\AutomationTasks\\AutomationTasks\\Factory\\BrowserFactory.cs*",
+              "RelativeToolTip": "AutomationTasks\\Factory\\BrowserFactory.cs*",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAwA4AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T09:55:59.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PageBase.cs",
+              "DocumentMoniker": "C:\\Users\\Edgaras.Valentynovic\\Desktop\\automationTasks\\AutomationTasks\\AutomationTasks\\PageBase\\PageBase.cs",
+              "RelativeDocumentMoniker": "AutomationTasks\\PageBase\\PageBase.cs",
+              "ToolTip": "C:\\Users\\Edgaras.Valentynovic\\Desktop\\automationTasks\\AutomationTasks\\AutomationTasks\\PageBase\\PageBase.cs*",
+              "RelativeToolTip": "AutomationTasks\\PageBase\\PageBase.cs*",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAwBcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T09:55:31.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginPage.cs",
+              "DocumentMoniker": "C:\\Users\\Edgaras.Valentynovic\\Desktop\\automationTasks\\AutomationTasks\\AutomationTasks\\PageBase\\LoginPage.cs",
+              "RelativeDocumentMoniker": "AutomationTasks\\PageBase\\LoginPage.cs",
+              "ToolTip": "C:\\Users\\Edgaras.Valentynovic\\Desktop\\automationTasks\\AutomationTasks\\AutomationTasks\\PageBase\\LoginPage.cs*",
+              "RelativeToolTip": "AutomationTasks\\PageBase\\LoginPage.cs*",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAxwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T09:55:15.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Module_1_Page.cs",
+              "DocumentMoniker": "C:\\Users\\Edgaras.Valentynovic\\Desktop\\automationTasks\\AutomationTasks\\AutomationTasks\\PageBase\\Module_1_Page\\Module_1_Page.cs",
+              "RelativeDocumentMoniker": "AutomationTasks\\PageBase\\Module_1_Page\\Module_1_Page.cs",
+              "ToolTip": "C:\\Users\\Edgaras.Valentynovic\\Desktop\\automationTasks\\AutomationTasks\\AutomationTasks\\PageBase\\Module_1_Page\\Module_1_Page.cs*",
+              "RelativeToolTip": "AutomationTasks\\PageBase\\Module_1_Page\\Module_1_Page.cs*",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T09:54:44.114Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
