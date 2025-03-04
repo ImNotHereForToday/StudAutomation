@@ -1,41 +1,65 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AutomationTasks.Pages
 {
     class LoginPage : PageBase
     {
-        public LoginPage(IWebDriver driver) : base(driver)
-        { }
-
         private IWebElement userNameField => driver.FindElement(By.Id("user-name"));
         private IWebElement passwordField => driver.FindElement(By.Id("password"));
         private IWebElement loginButton => driver.FindElement(By.Id("login-button"));
-        public IWebElement headerLogo => driver.FindElement(By.XPath("//div[@class='app_logo']"));
+        private IWebElement Burger => driver.FindElement(By.XPath("//button[@id='react-burger-menu-btn']"));
 
+        public LoginPage(IWebDriver driver) : base(driver)
+        {
+        }
 
-        //This method is used to log in to the system
-       
+        // This method is used to log in to the system
         public LoginPage LogInSystem(string username, string password)
         {
             userNameField.SendKeys(username);
             passwordField.SendKeys(password);
             loginButton.Click();
+
             return this;
         }
+
         public LoginPage LogInSystem()
         {
             loginButton.Click();
+
             return this;
         }
+
         public LoginPage AssertSuccessfulLogIn()
         {
-            Assert.That(headerLogo.Text, Is.EqualTo("Swag Labs"));
+            string actualUrl = driver.Url;
+            string expectedUrl = "https://www.saucedemo.com/inventory.html";
+            Assert.That(actualUrl, Is.EqualTo(expectedUrl));
+
+            return this;
+        }
+
+        public LoginPage AssertSuccessfulLogOut()
+        {
+            string actualUrl = driver.Url;
+            string expectedUrl = "https://www.saucedemo.com/";
+            Assert.That(actualUrl, Is.EqualTo(expectedUrl));
+
+            return this;
+        }
+
+        public LoginPage ClickOnBurger()
+        {
+            Burger.Click();
+
+            return this;
+        }
+
+        public LoginPage LogOut()
+        {
+            click(By.XPath("//a[@id='logout_sidebar_link']"));
+
             return this;
         }
     }

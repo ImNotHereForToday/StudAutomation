@@ -2,10 +2,6 @@
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AutomationTasks.Pages
 {
@@ -20,21 +16,25 @@ namespace AutomationTasks.Pages
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
         }
 
-        protected void click(By locator)
+        public void click(By locator)
         {
             wait.Until(ExpectedConditions.ElementToBeClickable(locator));
             driver.FindElement(locator).Click();
         }
-        protected void type(By locator, string text)
+
+        public void type(By locator, string text)
         {
             wait.Until(ExpectedConditions.ElementToBeClickable(locator));
             driver.FindElement(locator).SendKeys(text);
         }
-        protected string getText(By locator)
+
+        public string getText(By locator)
         {
             wait.Until(ExpectedConditions.ElementIsVisible(locator));
-            return driver.FindElement(locator).Text;
-        }
+            IWebElement element = driver.FindElement(locator);
+            string text = element.Text;
 
+            return text;
+        }
     }
 }

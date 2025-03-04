@@ -9,7 +9,6 @@ namespace AutomationTasks.Factory
 {
     class BrowserFactory
     {
-
         public static IWebDriver GetDriver(string browser)
         {
             IWebDriver driver;
@@ -28,8 +27,8 @@ namespace AutomationTasks.Factory
                 default:
                     throw new Exception("Invalid browser");
             }
+
             return driver;
         }
-
     }
 }

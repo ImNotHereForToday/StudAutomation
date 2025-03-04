@@ -1,11 +1,4 @@
-﻿using AutomationTasks.Pages;
-using NUnit.Framework;
-using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using NUnit.Framework;
 
 namespace AutomationTasks.Tests.Module_1_Test
 {
@@ -13,23 +6,19 @@ namespace AutomationTasks.Tests.Module_1_Test
     [TestFixture("chrome")]
     class Module_1_Test : TestBase
     {
-        public Module_1_Test(string browser) : base(browser) { }
+        public Module_1_Test(string browser) : base(browser)    
+        {   
+        }
 
-        string itemDescription = "carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.";
-
+        const string itemDescription = "carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.";
 
         [Test]
         public void logInTest()
         {
-            loginPage
-                     .LogInSystem("standard_user", "secret_sauce")
-                     .AssertSuccessfulLogIn();
-
-            module_1_page
-                         .ClickOnProduct("Sauce Labs Backpack")
-                         .AssertProdcutDescription(itemDescription);
-
-
+            Module_1_Test.loginPage.LogInSystem("standard_user", "secret_sauce");
+            Module_1_Test.loginPage.AssertSuccessfulLogIn();
+            Module_1_Test.module_1_Page.ClickOnProduct("Sauce Labs Backpack");
+            Module_1_Test.module_1_Page.AssertProdcutDescription(itemDescription);
         }
     }
 }
