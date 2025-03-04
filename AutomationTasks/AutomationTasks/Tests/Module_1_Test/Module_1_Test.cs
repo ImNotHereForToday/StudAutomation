@@ -19,9 +19,9 @@ namespace AutomationTasks.Tests.Module_1_Test
 
 
         [Test]
-        public void loginTest()
+        public void logInTest()
         {
-            loginPage.NavigateToDefaultPage()
+            loginPage
                      .LogInSystem("standard_user", "secret_sauce")
                      .AssertSuccessfulLogIn();
 

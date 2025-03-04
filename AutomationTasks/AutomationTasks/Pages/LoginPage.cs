@@ -17,17 +17,19 @@ namespace AutomationTasks.Pages
         private IWebElement passwordField => driver.FindElement(By.Id("password"));
         private IWebElement loginButton => driver.FindElement(By.Id("login-button"));
         public IWebElement headerLogo => driver.FindElement(By.XPath("//div[@class='app_logo']"));
-       
 
-        public LoginPage NavigateToDefaultPage()
-        {
-            driver.Navigate().GoToUrl("https://www.saucedemo.com/");
-            return this;
-        }
+
+        //This method is used to log in to the system
+       
         public LoginPage LogInSystem(string username, string password)
         {
             userNameField.SendKeys(username);
             passwordField.SendKeys(password);
+            loginButton.Click();
+            return this;
+        }
+        public LoginPage LogInSystem()
+        {
             loginButton.Click();
             return this;
         }
@@ -36,7 +38,5 @@ namespace AutomationTasks.Pages
             Assert.That(headerLogo.Text, Is.EqualTo("Swag Labs"));
             return this;
         }
-       
-
     }
 }

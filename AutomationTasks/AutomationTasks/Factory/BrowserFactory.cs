@@ -16,10 +16,14 @@ namespace AutomationTasks.Factory
             switch (browser)
             {
                 case "chrome":
-                    driver = new OpenQA.Selenium.Chrome.ChromeDriver();
+                    var chromeOptions = new OpenQA.Selenium.Chrome.ChromeOptions();
+                    chromeOptions.AddArgument("--start-maximized");
+                    driver = new OpenQA.Selenium.Chrome.ChromeDriver(chromeOptions);
                     break;
                 case "firefox":
-                    driver = new OpenQA.Selenium.Firefox.FirefoxDriver();
+                    var firefoxOptions = new OpenQA.Selenium.Firefox.FirefoxOptions();
+                    firefoxOptions.AddArgument("--start-maximized");
+                    driver = new OpenQA.Selenium.Firefox.FirefoxDriver(firefoxOptions);
                     break;
                 default:
                     throw new Exception("Invalid browser");

@@ -137,19 +137,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Factory\BrowserFactory.cs" />
-    <Compile Include="PageBase\LoginPage.cs" />
-    <Compile Include="PageBase\Module_1_Page\Module_1_Page.cs" />
-    <Compile Include="TestBase\Module_1_Test\Module_1_Test.cs" />
-    <Compile Include="PageBase\PageBase.cs" />
+    <Compile Include="Pages\LoginPage.cs" />
+    <Compile Include="Pages\Module_1_Page\Module_1_Page.cs" />
+    <Compile Include="Pages\Module_2_Page\Module_2_Page.cs" />
+    <Compile Include="Tests\Module_1_Test\Module_1_Test.cs" />
+    <Compile Include="Pages\PageBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TestBase\TestBase.cs" />
+    <Compile Include="Tests\Module_2_Test\Module_2_Test.cs" />
+    <Compile Include="Tests\TestBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="ILLink\ILLink.Descriptors.LibraryBuild.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
