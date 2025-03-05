@@ -16,19 +16,19 @@ namespace AutomationTasks.Pages
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
         }
 
-        public void click(By locator)
+        public void Click(By locator)
         {
             wait.Until(ExpectedConditions.ElementToBeClickable(locator));
             driver.FindElement(locator).Click();
         }
 
-        public void type(By locator, string text)
+        public void Type(By locator, string text)
         {
             wait.Until(ExpectedConditions.ElementToBeClickable(locator));
             driver.FindElement(locator).SendKeys(text);
         }
 
-        public string getText(By locator)
+        public string GetText(By locator)
         {
             wait.Until(ExpectedConditions.ElementIsVisible(locator));
             IWebElement element = driver.FindElement(locator);

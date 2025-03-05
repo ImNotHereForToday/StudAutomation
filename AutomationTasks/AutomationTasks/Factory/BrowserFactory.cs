@@ -1,9 +1,7 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Firefox;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AutomationTasks.Factory
 {
@@ -12,20 +10,20 @@ namespace AutomationTasks.Factory
         public static IWebDriver GetDriver(string browser)
         {
             IWebDriver driver;
-            switch (browser)
+            switch (browser.ToLower())
             {
                 case "chrome":
-                    var chromeOptions = new OpenQA.Selenium.Chrome.ChromeOptions();
+                    var chromeOptions = new ChromeOptions();
                     chromeOptions.AddArgument("--start-maximized");
-                    driver = new OpenQA.Selenium.Chrome.ChromeDriver(chromeOptions);
+                    driver = new ChromeDriver(chromeOptions);
                     break;
                 case "firefox":
-                    var firefoxOptions = new OpenQA.Selenium.Firefox.FirefoxOptions();
+                    var firefoxOptions = new FirefoxOptions();
                     firefoxOptions.AddArgument("--start-maximized");
-                    driver = new OpenQA.Selenium.Firefox.FirefoxDriver(firefoxOptions);
+                    driver = new FirefoxDriver(firefoxOptions);
                     break;
                 default:
-                    throw new Exception("Invalid browser");
+                    throw new ArgumentException($"Browser '{browser}' is not supported.");
             }
 
             return driver;

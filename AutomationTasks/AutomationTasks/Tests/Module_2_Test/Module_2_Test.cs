@@ -1,4 +1,7 @@
-﻿using NUnit.Framework;
+﻿using AutomationTasks.Pages.Module_3_Page;
+using AutomationTasks.Pages;
+using NUnit.Framework;
+using AutomationTasks.Pages.Module_2_Page;
 
 namespace AutomationTasks.Tests.Module_2_Test
 {
@@ -15,16 +18,22 @@ namespace AutomationTasks.Tests.Module_2_Test
         [Test, Order(1)]
         public void NoCredlogInTest()
         {
-            Module_2_Test.loginPage.LogInSystem();
-            Module_2_Test.module_2_Page.AssertUnsuccessfulLogInError(noCredErrorMessage);
+            var loginPage = new LoginPage(Driver);
+            var module_2_Page = new Module_2_Page(Driver);
+
+            loginPage.LogInSystem();
+            module_2_Page.AssertUnsuccessfulLogInError(noCredErrorMessage);
         }
 
         [Test, Order(2)]
-        public void badCredlogInTest()
+        public void BadCredlogInTest()
         {
-            Module_2_Test.loginPage.LogInSystem("invalid_user", "invalid_password");
-            Module_2_Test.loginPage.LogInSystem();
-            Module_2_Test.module_2_Page.AssertUnsuccessfulLogInError(badCredErrorMessage);
+            var loginPage = new LoginPage(Driver);
+            var module_2_Page = new Module_2_Page(Driver);
+
+            loginPage.LogInSystem("invalid_user", "invalid_password");
+            loginPage.LogInSystem();
+            module_2_Page.AssertUnsuccessfulLogInError(badCredErrorMessage);
         }
     }
 }
