@@ -8,7 +8,7 @@ namespace AutomationTasks.Pages
         private IWebElement userNameField => driver.FindElement(By.Id("user-name"));
         private IWebElement passwordField => driver.FindElement(By.Id("password"));
         private IWebElement loginButton => driver.FindElement(By.Id("login-button"));
-        private IWebElement Burger => driver.FindElement(By.XPath("//button[@id='react-burger-menu-btn']"));
+        private IWebElement BurgerButton => driver.FindElement(By.XPath("//button[@id='react-burger-menu-btn']"));
 
         public LoginPage(IWebDriver driver) : base(driver)
         {
@@ -51,14 +51,14 @@ namespace AutomationTasks.Pages
 
         public LoginPage ClickOnBurger()
         {
-            Burger.Click();
+            BurgerButton.Click();
 
             return this;
         }
 
         public LoginPage LogOut()
         {
-            click(By.XPath("//a[@id='logout_sidebar_link']"));
+            Click(By.XPath("//a[@id='logout_sidebar_link']"));
 
             return this;
         }
