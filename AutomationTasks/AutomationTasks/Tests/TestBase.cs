@@ -1,22 +1,21 @@
-﻿using AutomationTasks.Pages;
-using AutomationTasks.Pages.Module_1_Page;
-using AutomationTasks.Pages.Module_2_Page;
-using AutomationTasks.Pages.Module_3_Page;
+﻿using AutomationTasks.Factory;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using System.Threading;
-using AutomationTasks.Factory;
 
 namespace AutomationTasks.Tests
 {
     class TestBase
     {
         private static ThreadLocal<IWebDriver> driver = new ThreadLocal<IWebDriver>();
-        private string browser;
+        public string browser;
+        public string url;
 
-        public TestBase(string browser)
+        
+        protected TestBase(string browser, string url) 
         {
             this.browser = browser;
+            this.url = url;
         }
 
         public IWebDriver Driver => driver.Value;
@@ -25,7 +24,7 @@ namespace AutomationTasks.Tests
         public void Setup()
         {
             driver.Value = BrowserFactory.GetDriver(browser);
-            Driver.Navigate().GoToUrl("https://www.saucedemo.com/");
+            Driver.Navigate().GoToUrl(url);
         }
 
         [TearDown]

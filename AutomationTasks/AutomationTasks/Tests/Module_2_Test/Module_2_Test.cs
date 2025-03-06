@@ -8,7 +8,7 @@ namespace AutomationTasks.Tests.Module_2_Test
     [TestFixture("chrome")]
     class Module_2_Test : TestBase
     {
-        public Module_2_Test(string browser) : base(browser)    
+        public Module_2_Test(string browser) : base(browser , "https://www.saucedemo.com/")    
         {   
         }
 
@@ -23,6 +23,7 @@ namespace AutomationTasks.Tests.Module_2_Test
 
             loginPage.LogInSystem();
             module_2_Page.AssertUnsuccessfulLogInError(noCredErrorMessage);
+            Driver.Quit();
         }
 
         [Test, Order(2)]
@@ -34,6 +35,7 @@ namespace AutomationTasks.Tests.Module_2_Test
             loginPage.LogInSystem("invalid_user", "invalid_password");
             loginPage.LogInSystem();
             module_2_Page.AssertUnsuccessfulLogInError(badCredErrorMessage);
+            Driver.Quit();
         }
     }
 }

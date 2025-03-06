@@ -9,7 +9,7 @@ namespace AutomationTasks.Tests.Module_3_Test
     [Parallelizable(ParallelScope.All)]
     class Module_3_Test : TestBase
     {
-        public Module_3_Test(string browser) : base(browser)
+        public Module_3_Test(string browser) : base(browser , "https://www.saucedemo.com/")
         {
         }
 
@@ -25,6 +25,7 @@ namespace AutomationTasks.Tests.Module_3_Test
             loginPage.AssertSuccessfulLogIn();
             module_3_Page.SelectFilter("Price (low to high)");
             module_3_Page.AssertFilterApplied();
+            Driver.Quit();
         }
 
         [Test, Order(2)]
@@ -41,6 +42,7 @@ namespace AutomationTasks.Tests.Module_3_Test
             module_1_Page.ClickOnProduct("Sauce Labs Backpack");
             module_3_Page.AddProductToCart();
             module_3_Page.AssertThatProductWasAddedToCart("1");
+            Driver.Quit();
         }
 
         [Test, Order(3)]
@@ -63,6 +65,7 @@ namespace AutomationTasks.Tests.Module_3_Test
             loginPage.ClickOnBurger();
             loginPage.LogOut();
             loginPage.AssertSuccessfulLogOut();
+            Driver.Quit();
         }
     }
 }

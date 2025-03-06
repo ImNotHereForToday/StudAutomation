@@ -9,7 +9,7 @@ namespace AutomationTasks.Tests.Module_1_Test
     [TestFixture("chrome")]
     class Module_1_Test : TestBase
     {
-        public Module_1_Test(string browser) : base(browser)    
+        public Module_1_Test(string browser) : base(browser, "https://www.saucedemo.com/")    
         {   
         }
 
@@ -25,6 +25,7 @@ namespace AutomationTasks.Tests.Module_1_Test
             loginPage.AssertSuccessfulLogIn();
             module_1_Page.ClickOnProduct("Sauce Labs Backpack");
             module_1_Page.AssertProdcutDescription(itemDescription);
+            Driver.Quit();
         }
     }
 }
