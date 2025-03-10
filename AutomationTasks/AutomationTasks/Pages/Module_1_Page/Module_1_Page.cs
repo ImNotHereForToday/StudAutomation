@@ -13,7 +13,7 @@ namespace AutomationTasks.Pages.Module_1_Page
 
         public Module_1_Page ClickOnProduct(string productName)
         {
-            driver.FindElement(By.XPath($"//div[text()='{productName}']")).Click();
+            Click(By.XPath($"//div[text()='{productName}']"));
 
             return this;
         }
