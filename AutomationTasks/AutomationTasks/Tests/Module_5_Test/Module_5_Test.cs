@@ -6,7 +6,6 @@ using System.Drawing;
 
 namespace AutomationTasks.Tests.Module_5_Test
 {
-    [TestFixture]
     class Module_5_Test : TestBase
     {
         public Module_5_Test() : base("http://the-internet.herokuapp.com/")
@@ -30,13 +29,13 @@ namespace AutomationTasks.Tests.Module_5_Test
         public void FormAuthentication()
         {
             module_5_Page.ClickOnLinkPage("/login");
-            module_5_Page.InputCredentials();
-            module_5_Page.ClickOnLoginButton();
-            module_5_Page.AssertSuccessfulLogIn("You logged into a secure area!");
+            herokuappLogin.InputCredentials();
+            herokuappLogin.ClickOnLoginButton();
+            herokuappLogin.AssertLoginAlertMessage("You logged into a secure area!");
             Driver.Navigate().Back();
-            module_5_Page.AssertLogInPage("Login Page");
+            herokuappLogin.AssertLogInPage("Login Page");
             Driver.Navigate().Forward();
-            module_5_Page.AssertSuccessfulLogIn("You logged into a secure area!");
+            herokuappLogin.AssertLoginAlertMessage("You logged into a secure area!");
         }
 
         [Test, Order(2)]

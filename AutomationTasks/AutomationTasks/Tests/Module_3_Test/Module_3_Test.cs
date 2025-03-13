@@ -2,6 +2,7 @@
 using AutomationTasks.Pages.Module_1_Page;
 using AutomationTasks.Pages.Module_3_Page;
 using NUnit.Framework;
+using static AutomationTasks.Pages.LoginPage;
 
 namespace AutomationTasks.Tests.Module_3_Test
 {
@@ -16,7 +17,7 @@ namespace AutomationTasks.Tests.Module_3_Test
         [Property("quit", "true")]
         public void AssertProductSorting()
         {
-            var loginPage = new LoginPage(Driver);
+            var loginPage = new SauceDemoLogin(Driver);
             var module_3_Page = new Module_3_Page(Driver);
             loginPage.LogInSystem("standard_user", "secret_sauce");
             loginPage.AssertSuccessfulLogIn();
@@ -28,7 +29,7 @@ namespace AutomationTasks.Tests.Module_3_Test
         [Property("quit", "true")]
         public void AddProductToCart()
         {
-            var loginPage = new LoginPage(Driver);
+            var loginPage = new SauceDemoLogin(Driver);
             var module_1_Page = new Module_1_Page(Driver);
             var module_3_Page = new Module_3_Page(Driver);
             loginPage.LogInSystem("standard_user", "secret_sauce");
@@ -42,7 +43,7 @@ namespace AutomationTasks.Tests.Module_3_Test
         [Property("quit", "true")]
         public void RemoveProductFromCart()
         {
-            var loginPage = new LoginPage(Driver);
+            var loginPage = new SauceDemoLogin(Driver);
             var module_1_Page = new Module_1_Page(Driver);
             var module_3_Page = new Module_3_Page(Driver);
             loginPage.LogInSystem("standard_user", "secret_sauce");

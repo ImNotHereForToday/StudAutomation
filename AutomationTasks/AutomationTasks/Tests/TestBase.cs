@@ -4,11 +4,11 @@ using AutomationTasks.Pages.Module_2_Page;
 using AutomationTasks.Pages.Module_3_Page;
 using AutomationTasks.Pages.Module_5_Page;
 using AutomationTasks.Pages.Module_6_Page;
-using AutomationTasks.Pages;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using System.Threading;
 using static AutomationTasks.Factory.BrowserFactory;
+using static AutomationTasks.Pages.LoginPage;
 
 class TestBase
 {
@@ -16,7 +16,8 @@ class TestBase
     public Browser browser;
     public string url;
 
-    protected LoginPage loginPage;
+    protected SauceDemoLogin sauceDemoLogin;
+    protected HerokuappLogin herokuappLogin;
     protected Module_1_Page module_1_Page;
     protected Module_2_Page module_2_Page;
     protected Module_3_Page module_3_Page;
@@ -43,7 +44,8 @@ class TestBase
 
         if (driver.Value != null)
         {
-            loginPage = new LoginPage(Driver);
+            sauceDemoLogin = new SauceDemoLogin(Driver);
+            herokuappLogin = new HerokuappLogin(Driver);
             module_1_Page = new Module_1_Page(Driver);
             module_2_Page = new Module_2_Page(Driver);
             module_3_Page = new Module_3_Page(Driver);

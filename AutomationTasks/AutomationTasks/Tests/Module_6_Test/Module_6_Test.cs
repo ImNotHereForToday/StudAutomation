@@ -23,6 +23,7 @@ namespace AutomationTasks.Tests.Module_6_Test
             module_6_Page.SendKeysToAlert("haloa");
             module_6_Page.AssertAlertMessage("You entered: haloa");
         }
+
         [Test, Order(2)]
         [Property("quit", "true")]
         public void HandlingFrames()
@@ -33,6 +34,7 @@ namespace AutomationTasks.Tests.Module_6_Test
             module_6_Page.AssertIFrameHeading();
             Driver.SwitchTo().DefaultContent();
         }
+
         [Test, Order(3)]
         [Property("quit", "true")]
         public void InteractingWithSelectElement()
@@ -125,6 +127,7 @@ namespace AutomationTasks.Tests.Module_6_Test
             var currentUrlAfterBack = Driver.Url;
             Assert.That(currentUrlAfterBack, Is.EqualTo("https://the-internet.herokuapp.com/tables"));
         }
+
         [Test, Order(12)]
         [Property("quit", "true")]
         public void ValidateDataSortingWithDueColumn()

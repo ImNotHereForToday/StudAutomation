@@ -15,7 +15,7 @@ namespace AutomationTasks.Tests.Module_2_Test
         [Property("quit", "true")]
         public void NoCredlogInTest()
         {
-            loginPage.LogInSystem();
+            sauceDemoLogin.LogInSystem();
             module_2_Page.AssertUnsuccessfulLogInError(noCredErrorMessage);
         }
 
@@ -23,8 +23,8 @@ namespace AutomationTasks.Tests.Module_2_Test
         [Property("quit", "true")]
         public void BadCredlogInTest()
         {
-            loginPage.LogInSystem("invalid_user", "invalid_password");
-            loginPage.LogInSystem();
+            sauceDemoLogin.LogInSystem("invalid_user", "invalid_password");
+            sauceDemoLogin.LogInSystem();
             module_2_Page.AssertUnsuccessfulLogInError(badCredErrorMessage);
         }
     }

@@ -7,7 +7,7 @@ namespace AutomationTasks.Tests.Module_1_Test
     [TestFixture(Browser.Firefox)]
     class Module_1_Test : TestBase
     {
-        public Module_1_Test(Browser browser) : base(browser, "https://www.saucedemo.com/")     
+        public Module_1_Test(Browser browser) : base(browser, "https://www.saucedemo.com/") 
         {   
         }
 
@@ -17,8 +17,8 @@ namespace AutomationTasks.Tests.Module_1_Test
         [Property("quit", "true")]
         public void LogInTest()
         {
-            loginPage.LogInSystem("standard_user", "secret_sauce");
-            loginPage.AssertSuccessfulLogIn();
+            sauceDemoLogin.LogInSystem("standard_user", "secret_sauce");
+            sauceDemoLogin.AssertSuccessfulLogIn();
             module_1_Page.ClickOnProduct("Sauce Labs Backpack");
             module_1_Page.AssertProdcutDescription(itemDescription);
         }
