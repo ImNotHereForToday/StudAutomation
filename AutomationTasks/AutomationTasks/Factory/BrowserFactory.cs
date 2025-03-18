@@ -3,17 +3,13 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
 using System;
 using System.IO;
+using static AutomationTasks.Utility.Browsers;
 
 
 namespace AutomationTasks.Factory
 {
-    class BrowserFactory
+    class BrowserFactory 
     {
-        public enum Browser
-        {
-            Chrome,
-            Firefox
-        }
 
         // To use browsers separately
         // constructur should be like this :

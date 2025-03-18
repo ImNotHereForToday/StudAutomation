@@ -26,28 +26,10 @@ namespace AutomationTasks.Pages.Module_5_Page
             return this;
         }
 
-        public Module_5_Page SwitchToOtherWindow()
-        {
-            var windows = driver.WindowHandles;
-            driver.SwitchTo().Window(windows[1]);
-            
-            return this;
-        }
-
         public Module_5_Page AssertPageTitle(string expectedTitle)
         {
             string actualTitle = driver.Title;
             Assert.That(actualTitle, Is.EqualTo(expectedTitle));
-            
-            return this;
-        }
-
-        public Module_5_Page CloseOtherWindow()
-        {
-            var windows = driver.WindowHandles;
-            driver.SwitchTo().Window(windows[1]);
-            driver.Close();
-            driver.SwitchTo().Window(windows[0]);
             
             return this;
         }

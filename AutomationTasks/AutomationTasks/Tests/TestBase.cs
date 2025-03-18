@@ -1,14 +1,17 @@
 ﻿using AutomationTasks.Factory;
+using AutomationTasks.Pages;
+using AutomationTasks.Pages.Authentication;
 using AutomationTasks.Pages.Module_1_Page;
 using AutomationTasks.Pages.Module_2_Page;
 using AutomationTasks.Pages.Module_3_Page;
 using AutomationTasks.Pages.Module_5_Page;
 using AutomationTasks.Pages.Module_6_Page;
+using AutomationTasks.Pages.Module_8_Page;
+using AutomationTasks.Utility;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using System.Threading;
-using static AutomationTasks.Factory.BrowserFactory;
-using static AutomationTasks.Pages.LoginPage;
+using static AutomationTasks.Utility.Browsers;
 
 class TestBase
 {
@@ -23,12 +26,13 @@ class TestBase
     protected Module_3_Page module_3_Page;
     protected Module_5_Page module_5_Page;
     protected Module_6_Page module_6_Page;
+    protected Module_8_Page module_8_Page;
 
-    protected TestBase(string url) : this(Browser.Chrome, url)  
-    {   
+    protected TestBase(string url) : this(Browser.Chrome, url)
+    {
     }
 
-    protected TestBase(Browser browser, string url)
+    public TestBase(Browsers.Browser browser, string url)
     {
         this.browser = browser;
         this.url = url;
@@ -51,6 +55,7 @@ class TestBase
             module_3_Page = new Module_3_Page(Driver);
             module_5_Page = new Module_5_Page(Driver);
             module_6_Page = new Module_6_Page(Driver);
+            module_8_Page = new Module_8_Page(Driver);
         }
     }
 

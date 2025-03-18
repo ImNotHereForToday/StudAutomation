@@ -2,7 +2,7 @@
 using AutomationTasks.Pages.Module_1_Page;
 using AutomationTasks.Pages.Module_3_Page;
 using NUnit.Framework;
-using static AutomationTasks.Pages.LoginPage;
+using static AutomationTasks.Pages.SauceDemoLogin;
 
 namespace AutomationTasks.Tests.Module_3_Test
 {

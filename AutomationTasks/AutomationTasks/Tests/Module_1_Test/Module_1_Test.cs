@@ -1,5 +1,5 @@
 ﻿using NUnit.Framework;
-using static AutomationTasks.Factory.BrowserFactory;
+using static AutomationTasks.Utility.Browsers;
 
 namespace AutomationTasks.Tests.Module_1_Test
 {
