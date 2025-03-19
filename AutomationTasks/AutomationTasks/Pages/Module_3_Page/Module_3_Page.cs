@@ -52,7 +52,7 @@ namespace AutomationTasks.Pages.Module_3_Page
 
         public Module_3_Page AddProductToCart()
         {
-            driver.FindElement(By.XPath("//button[@id='add-to-cart']")).Click();
+            Click(By.XPath("//button[@id='add-to-cart']"));
 
             return this;
         }

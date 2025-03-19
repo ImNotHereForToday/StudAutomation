@@ -3,19 +3,19 @@ using OpenQA.Selenium;
 
 namespace AutomationTasks.Pages
 {
-    class LoginPage : PageBase
+    class SauceDemoLogin : PageBase
     {
         private IWebElement userNameField => driver.FindElement(By.Id("user-name"));
         private IWebElement passwordField => driver.FindElement(By.Id("password"));
         private IWebElement loginButton => driver.FindElement(By.Id("login-button"));
         private IWebElement BurgerButton => driver.FindElement(By.XPath("//button[@id='react-burger-menu-btn']"));
 
-        public LoginPage(IWebDriver driver) : base(driver)
+        public SauceDemoLogin(IWebDriver driver) : base(driver)
         {
         }
 
         // This method is used to log in to the system
-        public LoginPage LogInSystem(string username, string password)
+        public SauceDemoLogin LogInSystem(string username, string password)
         {
             userNameField.SendKeys(username);
             passwordField.SendKeys(password);
@@ -24,14 +24,14 @@ namespace AutomationTasks.Pages
             return this;
         }
 
-        public LoginPage LogInSystem()
+        public SauceDemoLogin LogInSystem()
         {
             loginButton.Click();
 
             return this;
         }
 
-        public LoginPage AssertSuccessfulLogIn()
+        public SauceDemoLogin AssertSuccessfulLogIn()
         {
             string actualUrl = driver.Url;
             string expectedUrl = "https://www.saucedemo.com/inventory.html";
@@ -40,7 +40,7 @@ namespace AutomationTasks.Pages
             return this;
         }
 
-        public LoginPage AssertSuccessfulLogOut()
+        public SauceDemoLogin AssertSuccessfulLogOut()
         {
             string actualUrl = driver.Url;
             string expectedUrl = "https://www.saucedemo.com/";
@@ -49,14 +49,14 @@ namespace AutomationTasks.Pages
             return this;
         }
 
-        public LoginPage ClickOnBurger()
+        public SauceDemoLogin ClickOnBurger()
         {
             BurgerButton.Click();
 
             return this;
         }
 
-        public LoginPage LogOut()
+        public SauceDemoLogin LogOut()
         {
             Click(By.XPath("//a[@id='logout_sidebar_link']"));
 
