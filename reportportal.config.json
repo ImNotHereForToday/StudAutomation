@@ -1,0 +1,15 @@
+{
+    "server": {
+      "url": "https://demo.reportportal.io/api/v1",
+      "project": "imnotherefortoday_personal",
+      "authentication": {
+        "uuid": "JustAToken_xEP3OyIVQs2pbFcoBnqSPDz-3wahQ3GWtmTWm1VPXtDYIeonQSMOpL5dd1Fb8dUw"
+      }
+    },
+    "launch": {
+      "name": "Azure DevOps Test Run",
+      "description": "Tests triggered from Azure DevOps pipeline",
+      "debugMode": false
+    }
+  }
+  
